@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm max và trung bình cộng</title>
+</head>
+<body>
+<script>
+  let array =[3,5,34,78,34,7,11,17,20];
+  alert(array)
+  let max=array[0];
+  let postision ;
+  let sum =array[0];
+  let medium =[0];
+  let n =array.length;
+  for (i=0;i<array.length;i++){
+    if (array[i]>max) {
+      max = array[i];
+      postision = i + 1;
+      sum += array[i];
+      medium =sum/n
+    }
+    }
+  document.write("số lớn nhất là :" +max + "<br>")
+  document.write("Vị trí số lớn nhất là :" + postision +"<br>")
+  document.write("Trung bình tổng của dãy số là :" + medium)
+</script>
+</body>
+</html>

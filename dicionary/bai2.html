@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm max</title>
+</head>
+<body>
+<script>
+  let array =[13,23,54,123,546,212,341,1233,1234,12]
+  alert(array)
+    let max = array[0];
+  let position ;
+  for( i=1;i<array.length;i++){
+    if (max < array[i]) {
+        max = array[i];
+        position =i+1
+    }
+  }
+  document.write("số lớn nhất là:" + max+"<br>");
+  document.write("Vị trí index là" +position)
+
+
+</script>
+</body>
+</html>
